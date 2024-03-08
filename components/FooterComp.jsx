@@ -4,14 +4,13 @@ import FramerMgBtn from "./FramerMgBtn";
 
 export default function FooterWithLogo() {
   return (
-    <footer className="w-full bg-white mt-10 p-12 sm:p-14 z-10">
-      <div className="flex flex-col-reverse sm:flex-row flex-wrap items-center justify-around gap-y-6 gap-x-64 text-center">
-        <b className="text-[#242424] font-ubuntu text-xl">
-          <Link to="home" href="#home" smooth={true} duration={1000}>
-            Muhtadee Taron
-          </Link>
-        </b>
-        <ul className="flex flex-row flex-wrap items-center gap-y-2 gap-x-10">
+    <footer className="w-full bg-white mt-10 p-12 sm:p-14 z-[999]">
+      <div className="flex items-center justify-center gap-y-6 gap-x-64 text-center z-[999]">
+        <Link to="home" href="#home" smooth={true} duration={1000} className="z-[999]">
+          <b className="text-[#242424] font-ubuntu text-xl z-[999]">Muhtadee Taron</b>
+        </Link>
+
+        {/* <ul className="flex flex-row flex-wrap items-center gap-y-2 gap-x-10">
           <li>
             <Typography
               as="a"
@@ -68,7 +67,7 @@ export default function FooterWithLogo() {
               </FramerMgBtn>
             </Typography>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );
