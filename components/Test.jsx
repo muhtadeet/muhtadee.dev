@@ -31,7 +31,7 @@ const CustomCursor = () => {
     backgroundColor: 'rgb(255, 67, 75)',
     background: 'linear-gradient(#43d9ad, #4d5bce)',
     opacity: 0.4,
-    zIndex: -1,
+    zIndex: 0,
   };
 
   const variants = {

@@ -6,9 +6,11 @@ export default function FooterWithLogo() {
   return (
     <footer className="w-full bg-white mt-10 p-12 sm:p-14">
       <div className="flex flex-col-reverse sm:flex-row flex-wrap items-center justify-around gap-y-6 gap-x-64 text-center">
-        <Link to="home" href="#home" smooth={true} duration={1000}>
-          <b className="text-[#242424] font-ubuntu text-xl">Muhtadee Taron</b>
-        </Link>
+        <b className="text-[#242424] font-ubuntu text-xl z-10">
+          <Link to="home" href="#home" smooth={true} duration={1000}>
+            Muhtadee Taron
+          </Link>
+        </b>
         <ul className="flex flex-row flex-wrap items-center gap-y-2 gap-x-10">
           <li>
             <Typography
