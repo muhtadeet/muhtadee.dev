@@ -30,9 +30,7 @@ export default function Home() {
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
-        if (typeof window !== "undefined") {
-          window.scrollTo(0, 0);
-        }
+        window.scrollTo(0, 0);
       }, 2000);
     })();
   }, []);
