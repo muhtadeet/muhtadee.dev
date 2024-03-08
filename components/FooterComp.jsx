@@ -16,7 +16,7 @@ export default function FooterWithLogo() {
             <Typography
               as="a"
               color="white"
-              className="sm:ml-4 transition duration-300 ease-in-out hover:text-blue-gray-400"
+              className="sm:ml-4 transition duration-300 ease-in-out hover:text-blue-gray-400 z-10"
             >
               <FramerMgBtn>
                 <Link href="https://www.linkedin.com/in/muhtadee-taron-b4253628b/">
@@ -46,7 +46,7 @@ export default function FooterWithLogo() {
             <Typography
               as="a"
               color="white"
-              className="transition duration-300 ease-in-out hover:text-blue-gray-400"
+              className="transition duration-300 ease-in-out hover:text-blue-gray-400 z-10"
             >
               <FramerMgBtn>
                 <Link href="https://github.com/muhtadeet">
