@@ -4,9 +4,9 @@ import FramerMgBtn from "./FramerMgBtn";
 
 export default function FooterWithLogo() {
   return (
-    <footer className="w-full bg-white mt-10 p-12 sm:p-14">
+    <footer className="w-full bg-white mt-10 p-12 sm:p-14 z-10">
       <div className="flex flex-col-reverse sm:flex-row flex-wrap items-center justify-around gap-y-6 gap-x-64 text-center">
-        <b className="text-[#242424] font-ubuntu text-xl z-10">
+        <b className="text-[#242424] font-ubuntu text-xl">
           <Link to="home" href="#home" smooth={true} duration={1000}>
             Muhtadee Taron
           </Link>
@@ -16,7 +16,7 @@ export default function FooterWithLogo() {
             <Typography
               as="a"
               color="white"
-              className="sm:ml-4 transition duration-300 ease-in-out hover:text-blue-gray-400 z-10"
+              className="sm:ml-4 transition duration-300 ease-in-out hover:text-blue-gray-400"
             >
               <FramerMgBtn>
                 <Link href="https://www.linkedin.com/in/muhtadee-taron-b4253628b/">
@@ -46,7 +46,7 @@ export default function FooterWithLogo() {
             <Typography
               as="a"
               color="white"
-              className="transition duration-300 ease-in-out hover:text-blue-gray-400 z-10"
+              className="transition duration-300 ease-in-out hover:text-blue-gray-400"
             >
               <FramerMgBtn>
                 <Link href="https://github.com/muhtadeet">
