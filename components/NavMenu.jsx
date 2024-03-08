@@ -10,12 +10,20 @@ import { Link } from "react-scroll";
 // import { animateScroll as scroll } from "react-scroll";
 import FramerMgBtn from "./FramerMgBtn";
 import { AnimatePresence } from "framer-motion";
-import Nav from "./Menu.jsx";
+// import Menu from "./Menu.jsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dynamic from "next/dynamic";
 
 export default function App() {
   const [isMenuActive, setIsMenuActive] = React.useState(false);
+
+  const Menu = dynamic(
+    () => {
+      return import("./Menu");
+    },
+    { ssr: false }
+  );
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -141,7 +149,7 @@ export default function App() {
           </FramerMgBtn>
         </div>
       </div>
-      <AnimatePresence mode="wait">{isMenuActive && <Nav />}</AnimatePresence>
+      <AnimatePresence mode="wait">{isMenuActive && <Menu />}</AnimatePresence>
     </Navbar>
   );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import { Providers } from "../components/providers";
+import { Providers } from "./providers";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="light" suppressHydrationWarning>
       <body className={ubuntu.className && "bg-white"}>
         <Providers>{children}</Providers>
       </body>
