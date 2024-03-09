@@ -68,7 +68,7 @@ export default function Home() {
             }}
             className=" text-[#242424] mr-10 text-sm md:text-lg md:m-5 xl:text-2xl xl:m-10 font-ubuntu  font-black"
           >
-            Front-End Developer
+            Web Developer
           </motion.p>
           <motion.p
             style={{ x: smx }}
