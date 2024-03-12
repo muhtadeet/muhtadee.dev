@@ -140,7 +140,7 @@ export default function App() {
               onClick={() => {
                 setIsMenuActive(!isMenuActive);
               }}
-              className="w-[100px] h-[100px] rounded-full scale-0 transition-all ease-in-out hover:bg-light-blue-600 bg-black border-2 border-[#555555] cursor-pointer flex items-center justify-center"
+              className="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full scale-0 transition-all ease-in-out hover:bg-light-blue-600 bg-black border-2 border-[#555555] cursor-pointer flex items-center justify-center"
             >
               <div
                 className={`${"burger"} ${isMenuActive ? "burgerActive" : ""}`}

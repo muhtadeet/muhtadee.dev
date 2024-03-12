@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import FramerMgBtn from "./FramerMgBtn";
 import { useRef } from "react";
 import Image from "next/image";
+import { FileText } from "lucide-react";
 
 const variants = {
   initial: {
@@ -166,7 +167,7 @@ export default function Home() {
                 href="./Muhtadee Taron.pdf"
                 download
               >
-                <svg
+                {/* <svg
                   height="48"
                   width="48"
                   version="1.1"
@@ -202,7 +203,8 @@ export default function Home() {
                   <path d="M212.333,118.467H255c5.12,0,8.533-3.413,8.533-8.533S260.12,101.4,255,101.4h-42.667c-5.12,0-8.533,3.413-8.533,8.533 S207.213,118.467,212.333,118.467z"></path>
                   <path d="M212.333,152.6h8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533h-8.533 c-5.12,0-8.533,3.413-8.533,8.533C203.8,149.187,207.213,152.6,212.333,152.6z"></path>
                   <path d="M212.333,186.733H255c5.12,0,8.533-3.413,8.533-8.533s-3.413-8.533-8.533-8.533h-42.667c-5.12,0-8.533,3.413-8.533,8.533 S207.213,186.733,212.333,186.733z"></path>
-                </svg>
+                </svg> */}
+                <FileText className="transition ease-in-out hover:stroke-light-blue-600 ml-1 stroke-blue-gray-800" />
               </motion.a>
             </Tooltip>
           </FramerMgBtn>
