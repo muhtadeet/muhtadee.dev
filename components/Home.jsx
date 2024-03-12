@@ -164,7 +164,7 @@ export default function Home() {
                 viewport={{
                   once: true,
                 }}
-                href="./Muhtadee Taron.pdf"
+                href="./Muhtadee_Taron.pdf"
                 download
               >
                 {/* <svg
