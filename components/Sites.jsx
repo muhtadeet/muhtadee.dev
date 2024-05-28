@@ -5,7 +5,8 @@ import Port from "../public/port.png";
 // import Ecom from "../public/e-com.png";
 import Kami from "../public/kami.png";
 import Comrade from "../public/comrade.png";
-import FramerMgBtn from "../components/FramerMgBtn";
+import Ibadah from "../public/Ibadah.png";
+// import FramerMgBtn from "../components/FramerMgBtn";
 import Image from "next/image";
 
 const anim = {
@@ -22,6 +23,7 @@ function Sites() {
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
   const [isActive4, setIsActive4] = useState(false);
+  const [isActive5, setIsActive5] = useState(false);
 
   return (
     <>
@@ -130,6 +132,33 @@ function Sites() {
           </motion.div>
           <p className="text-white font-lato text-[5vw] m-0">
             &nbsp;Gemini AI 🤖
+          </p>
+        </div>
+      </a>
+      <a href="https://comrade-flame.vercel.app">
+        <div
+          onMouseEnter={() => {
+            setIsActive5(true);
+          }}
+          onMouseLeave={() => {
+            setIsActive5(false);
+          }}
+          className="border-t-2 last-of-type:border-b-2 z-[99999] pt-[0.8vw] pb-[0.8vw] cursor-pointer w-[100%] flex justify-center items-center"
+        >
+          <p className="text-white font-lato text-[5vw] m-0">Ibadah&nbsp;</p>
+          <motion.div
+            variants={anim}
+            animate={isActive5 ? "open" : "closed"}
+            className="overflow-hidden flex justify-center w-0"
+          >
+            {/* <FramerMgBtn> */}
+
+            <Image alt="Project Image" className="w-[10vw] m-3" src={Ibadah} />
+
+            {/* </FramerMgBtn> */}
+          </motion.div>
+          <p className="text-white font-lato text-[5vw] m-0">
+            &nbsp;Prayer Times 🕌
           </p>
         </div>
       </a>
