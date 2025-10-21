@@ -137,7 +137,7 @@ export default function Home() {
                 }}
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/muhtadeet"
+                href="https://github.com/toruu7"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
